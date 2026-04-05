@@ -67,3 +67,57 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(section => observer.observe(section));
+
+// ============================================
+// ЛАЙТБОКС
+// ============================================
+const lightbox  = document.getElementById('lightbox');
+const lbImg     = document.getElementById('lb-img');
+const lbCounter = document.getElementById('lb-counter');
+const lbClose   = document.getElementById('lb-close');
+const lbPrev    = document.getElementById('lb-prev');
+const lbNext    = document.getElementById('lb-next');
+
+const galleryImgs = Array.from(document.querySelectorAll('.gallery-item img'));
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  lbImg.src = galleryImgs[index].src;
+  lbImg.alt = galleryImgs[index].alt;
+  lbCounter.textContent = `${index + 1} / ${galleryImgs.length}`;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function showNext() {
+  openLightbox((currentIndex + 1) % galleryImgs.length);
+}
+
+function showPrev() {
+  openLightbox((currentIndex - 1 + galleryImgs.length) % galleryImgs.length);
+}
+
+galleryImgs.forEach((img, i) => {
+  img.parentElement.addEventListener('click', () => openLightbox(i));
+});
+
+lbClose.addEventListener('click', closeLightbox);
+lbNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+lbPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape')      closeLightbox();
+  if (e.key === 'ArrowRight')  showNext();
+  if (e.key === 'ArrowLeft')   showPrev();
+});

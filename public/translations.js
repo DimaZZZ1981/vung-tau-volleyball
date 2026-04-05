@@ -55,6 +55,8 @@ const translations = {
     'organizers.text': 'Thẻ thông tin ban tổ chức sẽ xuất hiện tại đây: ảnh, tên, mô tả ngắn và liên kết Telegram.',
 
     'gallery.title': 'Thư viện ảnh',
+    'gallery.showMore': 'Xem thêm ảnh ↓',
+    'gallery.showLess': 'Thu gọn ↑',
 
     'training.title': 'Tập luyện',
     'training.text': 'Thông tin về các buổi tập bóng chuyền bãi biển và cách đăng ký sẽ có tại đây.',
@@ -164,6 +166,8 @@ const translations = {
     'organizers.text': 'Organizer cards will appear here: photo, name, short description and Telegram link.',
 
     'gallery.title': 'Gallery',
+    'gallery.showMore': 'Show more photos ↓',
+    'gallery.showLess': 'Show less ↑',
 
     'training.title': 'Training',
     'training.text': 'Information about planned beach volleyball training sessions and how to sign up will appear here.',
@@ -273,6 +277,8 @@ const translations = {
     'organizers.text': 'Здесь будут карточки организаторов: фото, имя, короткое описание и ссылка на Telegram.',
 
     'gallery.title': 'Галерея',
+    'gallery.showMore': 'Ещё фото ↓',
+    'gallery.showLess': 'Свернуть ↑',
 
     'training.title': 'Тренировки',
     'training.text': 'Здесь будет информация о планируемых тренировках по пляжному волейболу и как на них записаться.',

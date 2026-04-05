@@ -486,6 +486,30 @@ a {
   cursor: pointer;
 }
 
+.gallery-item.gallery-hidden {
+  display: none;
+}
+
+.gallery-show-more {
+  display: block;
+  margin: 24px auto 0;
+  padding: 12px 32px;
+  background: var(--sunset);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.gallery-show-more:hover {
+  background: #e85a25;
+  transform: translateY(-2px);
+}
+
 /* ============================================
    ЛАЙТБОКС
    ============================================ */

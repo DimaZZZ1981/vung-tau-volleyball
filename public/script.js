@@ -69,6 +69,28 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 
 // ============================================
+// ГАЛЕРЕЯ — показать/скрыть
+// ============================================
+const GALLERY_VISIBLE = 6;
+const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+const galleryToggle = document.getElementById('gallery-toggle');
+let galleryExpanded = false;
+
+galleryItems.forEach((item, i) => {
+  if (i >= GALLERY_VISIBLE) item.classList.add('gallery-hidden');
+});
+
+galleryToggle.addEventListener('click', () => {
+  galleryExpanded = !galleryExpanded;
+  const lang = localStorage.getItem('lang') || 'vi';
+  galleryItems.forEach((item, i) => {
+    if (i >= GALLERY_VISIBLE) item.classList.toggle('gallery-hidden', !galleryExpanded);
+  });
+  galleryToggle.setAttribute('data-i18n', galleryExpanded ? 'gallery.showLess' : 'gallery.showMore');
+  galleryToggle.innerHTML = translations[lang][galleryExpanded ? 'gallery.showLess' : 'gallery.showMore'];
+});
+
+// ============================================
 // ЛАЙТБОКС
 // ============================================
 const lightbox  = document.getElementById('lightbox');

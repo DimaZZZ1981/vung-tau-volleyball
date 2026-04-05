@@ -364,6 +364,23 @@ a {
 }
 
 /* ============================================
+   ЛОГОТИП В СЕКЦИЯХ
+   ============================================ */
+.section-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.section-logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(2, 62, 138, 0.15);
+}
+
+/* ============================================
    О НАС
    ============================================ */
 .about-grid {

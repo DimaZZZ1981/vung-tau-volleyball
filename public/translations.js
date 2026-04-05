@@ -17,9 +17,9 @@ const translations = {
     'nav.contacts': 'Liên hệ',
 
     'hero.title': 'Bóng chuyền bãi biển<br>tại Vũng Tàu',
-    'hero.subtitle': 'Việt Nam · Bãi biển · Mỗi cuối tuần',
+    'hero.subtitle': 'Việt Nam · Bãi biển · Mỗi ngày',
     'hero.stat.players': 'người chơi',
-    'hero.stat.week': 'mỗi tuần',
+    'hero.stat.week': 'mỗi ngày',
     'hero.stat.year': 'năm thành lập',
 
     'about.title': 'Về chúng tôi',
@@ -128,9 +128,9 @@ const translations = {
     'nav.contacts': 'Contacts',
 
     'hero.title': 'Beach Volleyball<br>in Vung Tau',
-    'hero.subtitle': 'Vietnam · On the beach · Every weekend',
+    'hero.subtitle': 'Vietnam · On the beach · Every day',
     'hero.stat.players': 'players',
-    'hero.stat.week': 'per week',
+    'hero.stat.week': 'every day',
     'hero.stat.year': 'founded',
 
     'about.title': 'About us',
@@ -239,9 +239,9 @@ const translations = {
     'nav.contacts': 'Контакты',
 
     'hero.title': 'Пляжный волейбол<br>в Вунгтау',
-    'hero.subtitle': 'Вьетнам · На пляже · Каждые выходные',
+    'hero.subtitle': 'Вьетнам · На пляже · Каждый день',
     'hero.stat.players': 'игроков',
-    'hero.stat.week': 'в неделю',
+    'hero.stat.week': 'каждый день',
     'hero.stat.year': 'год основания',
 
     'about.title': 'О нас',

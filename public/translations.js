@@ -83,7 +83,7 @@ const translations = {
     'tournament.li3': '👥 Hình thức: 4×4',
     'tournament.li4': '🏆 Giải thưởng: cúp và huy chương cho người chiến thắng',
     'tournament.register': 'Đăng ký qua Telegram và Zalo',
-    'tournament.btn.form': 'Đăng ký đội',
+    'tournament.btn.form': 'Đăng ký',
     'tournament.btn.zalo': 'Nhắn tin Zalo',
 
     'reviews.title': 'Người chơi nói gì',
@@ -194,7 +194,7 @@ const translations = {
     'tournament.li3': '👥 Format: 4×4',
     'tournament.li4': '🏆 Prizes: cup and medals for winners',
     'tournament.register': 'Registration via Telegram and Zalo',
-    'tournament.btn.form': 'Register your team',
+    'tournament.btn.form': 'Register',
     'tournament.btn.zalo': 'Message on Zalo',
 
     'reviews.title': 'What players say',
@@ -305,7 +305,7 @@ const translations = {
     'tournament.li3': '👥 Формат: 4×4',
     'tournament.li4': '🏆 Призы: кубок и медали победителям',
     'tournament.register': 'Регистрация через Telegram и Zalo',
-    'tournament.btn.form': 'Зарегистрировать команду',
+    'tournament.btn.form': 'Регистрация',
     'tournament.btn.zalo': 'Написать в Zalo',
 
     'reviews.title': 'Говорят игроки',

@@ -850,8 +850,8 @@ a {
   .hero-title-group { flex-direction: column; gap: 12px; }
   .hero-logo { width: 110px; height: 110px; }
   .hero-cta { flex-direction: column; align-items: stretch; }
-  .cta-buttons { flex-direction: column; align-items: center; }
-  .cta-buttons .btn { width: 100%; max-width: 320px; text-align: center; }
+  .cta-buttons { flex-direction: column; align-items: stretch; max-width: 320px; margin-left: auto; margin-right: auto; }
+  .cta-buttons .btn { width: 100%; text-align: center; }
   .btn { text-align: center; padding: 11px 24px; font-size: 0.88rem; }
   .about-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 24px; }
